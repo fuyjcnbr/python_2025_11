@@ -31,3 +31,6 @@ jobs:
       run: |
         uv run pylint . --ignore .venv
         uv run python -m pytest tests
+    - name: App running
+      run: |
+        uv run main.py
