@@ -29,5 +29,5 @@ jobs:
 #        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Type annotations checking
       run: |
-        uv run python -m pytest tests |
         uv run pylint . --ignore .venv
+        uv run python -m pytest tests
